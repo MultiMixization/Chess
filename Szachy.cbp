@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Szachy" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Szachy" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-s-d" />
+					<Add library="sfml-window-s-d" />
+					<Add library="sfml-system-s-d" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="freetype" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Szachy" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="freetype" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++20" />
+			<Add directory="C:/Users/kolor/Documents/SFML/include" />
+		</Compiler>
+		<Linker>
+			<Add library="freetype" />
+			<Add directory="C:/Users/kolor/Documents/SFML/lib" />
+		</Linker>
+		<Unit filename="include/Bishop.h" />
+		<Unit filename="include/Board.h" />
+		<Unit filename="include/Cross.h" />
+		<Unit filename="include/Horse.h" />
+		<Unit filename="include/King.h" />
+		<Unit filename="include/Menu.h" />
+		<Unit filename="include/Pawn.h" />
+		<Unit filename="include/Piece.h" />
+		<Unit filename="include/Queen.h" />
+		<Unit filename="include/Team.h" />
+		<Unit filename="include/Tower.h" />
+		<Unit filename="include/game.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Bishop.cpp" />
+		<Unit filename="src/Board.cpp" />
+		<Unit filename="src/Cross.cpp" />
+		<Unit filename="src/Horse.cpp" />
+		<Unit filename="src/King.cpp" />
+		<Unit filename="src/Menu.cpp" />
+		<Unit filename="src/Pawn.cpp" />
+		<Unit filename="src/Piece.cpp" />
+		<Unit filename="src/Queen.cpp" />
+		<Unit filename="src/Team.cpp" />
+		<Unit filename="src/Tower.cpp" />
+		<Unit filename="src/game.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
